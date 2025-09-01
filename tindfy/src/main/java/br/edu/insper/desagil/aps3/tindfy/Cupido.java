@@ -1,5 +1,6 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +22,8 @@ public class Cupido {
     }
 
     public boolean match(Usuario u1, Usuario u2){
-        int id1 = u1.getIdentificador();
-        int id2 = u2.getIdentificador();
+        int id1 = u1.getId();
+        int id2 = u2.getId();
 
         return likes.containsKey(id1) && likes.get(id1).contains(id2) &&
                 likes.containsKey(id2) && likes.get(id2).contains(id1);

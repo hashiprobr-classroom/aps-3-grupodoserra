@@ -17,7 +17,6 @@ public class ArtistaTest {
         assertEquals(1,a.getIdentificador());
         assertEquals("hashi",a.getNome());
     }
-
     @Test
     void mudaNome() {
         a.setNome("marcelo");

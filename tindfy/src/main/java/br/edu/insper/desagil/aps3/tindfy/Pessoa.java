@@ -4,7 +4,7 @@ public class Pessoa {
     private int id;
     private String nome;
 
-    public int getIdentificador() {
+    public int getId() {
         return id;
     }
 
