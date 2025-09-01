@@ -3,6 +3,8 @@ package br.edu.insper.desagil.aps3.tindfy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class CupidoTest {
@@ -25,13 +27,13 @@ public class CupidoTest {
 
     @Test
     void primeiroDaLike() {
-        cupido.registraLike(usuario1.getIdentificador(), usuario2.getIdentificador());
+        cupido.registraLike(usuario1.getId(), usuario2.getId());
         assertFalse(cupido.match(usuario1, usuario2));
     }
 
     @Test
     void segundoDaLike() {
-        cupido.registraLike(usuario2.getIdentificador(), usuario1.getIdentificador());
+        cupido.registraLike(usuario2.getId(), usuario1.getId());
 
         assertFalse(cupido.match(usuario1, usuario2));
     }

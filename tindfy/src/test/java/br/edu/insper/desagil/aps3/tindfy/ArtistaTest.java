@@ -14,7 +14,7 @@ public class ArtistaTest {
 
     @Test
     void constroi() {
-        assertEquals(1,a.getIdentificador());
+        assertEquals(1,a.getId());
         assertEquals("hashi",a.getNome());
     }
     @Test
