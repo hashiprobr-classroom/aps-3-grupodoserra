@@ -1,11 +1,11 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
 public class Pessoa {
-    private int identificador;
+    private int id;
     private String nome;
 
     public int getIdentificador() {
-        return identificador;
+        return id;
     }
 
     public String getNome() {
@@ -16,8 +16,8 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public Pessoa(int identificador, String nome) {
-        this.identificador = identificador;
+    public Pessoa(int id, String nome) {
+        this.id = id;
         this.nome = nome;
     }
 }

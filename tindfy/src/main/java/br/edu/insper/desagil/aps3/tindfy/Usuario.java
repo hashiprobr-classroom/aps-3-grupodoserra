@@ -9,14 +9,14 @@ public class Usuario extends Pessoa{
         return musicas;
     }
 
-    public Usuario(int identificador, String nome, List<Musica> musicas) {
-        super(identificador, nome);
+    public Usuario(int id, String nome, List<Musica> musicas) {
+        super(id, nome);
         this.musicas = musicas;
     }
 
     public boolean temMusica(Musica musica){
         for (Musica m: musicas) {
-            boolean mesmoArtista = m.getArtista().getIdentificador() == musica.getArtista().getIdentificador();
+            boolean mesmoArtista = m.getArtista().getId() == musica.getArtista().getId();
             boolean mesmoTitulo = m.getTitulo().equals(musica.getTitulo());
 
             if (mesmoArtista && mesmoTitulo){
