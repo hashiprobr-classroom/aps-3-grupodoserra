@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.aps3.tindfy;
 
-public class Pessoa {
+public abstract class Pessoa {
     private int id;
     private String nome;
     public Pessoa(int id ,String nome){
